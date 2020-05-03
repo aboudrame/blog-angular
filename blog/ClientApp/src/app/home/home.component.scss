@@ -1,0 +1,28 @@
+body {
+}
+
+.main-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.banner img {
+    width: 100%;
+}
+
+.featured-content {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: -50px;
+}
+
+.category {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.courses {
+    padding-left: 30px;
+}

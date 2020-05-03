@@ -1,0 +1,24 @@
+<h1 id="tableLabel">Blog List</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!blogs"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="blogs">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Created Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let blog of blogs">
+      <td>{{ blog.id }}</td>
+      <td>{{ blog.title }}</td>
+      <td>{{ blog.description }}</td>
+      <td>{{ blog.createddate }}</td>
+    </tr>
+  </tbody>
+</table>
